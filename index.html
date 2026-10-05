@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover curated books, reviews, summaries, and information across literature, science fiction, philosophy, and self-improvement.">
+  <title>PageVerse — Curated Book Information & Insights</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <div class="brand-icon">📚</div>
+        <div class="brand-text">Page<span>Verse</span></div>
+      </a>
+      <nav class="header-actions">
+        <a href="index.html" class="nav-link active">Explore Catalog</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-badge">
+      ✨ <span>Curated Reading Collection</span>
+    </div>
+    <h1 class="hero-title">Expand Your Horizons With Every Page</h1>
+    <p class="hero-subtitle">
+      Explore deep summaries, key quotes, author insights, and community reviews for the world's most transformative books.
+    </p>
+
+    <!-- Search Bar -->
+    <div class="search-wrapper">
+      <div class="search-input-box">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Search by title, author, or genre..." 
+          autocomplete="off"
+          aria-label="Search books"
+        />
+        <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear search">✕</button>
+      </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="categories-container" id="categoryContainer" role="tablist">
+      <button class="category-pill active" data-category="All">All Books</button>
+      <button class="category-pill" data-category="Classic Fiction">Classic Fiction</button>
+      <button class="category-pill" data-category="Sci-Fi">Sci-Fi</button>
+      <button class="category-pill" data-category="Self-Improvement">Self-Improvement</button>
+      <button class="category-pill" data-category="Philosophy">Philosophy</button>
+      <button class="category-pill" data-category="Mystery">Mystery</button>
+      <button class="category-pill" data-category="Non-Fiction">Non-Fiction</button>
+      <button class="category-pill" data-category="Fantasy">Fantasy</button>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <main class="catalog-section">
+    <div class="catalog-header">
+      <div class="catalog-title">
+        <span id="catalogCategoryTitle">Featured Books</span>
+        <span id="bookCountBadge" class="book-count-badge">8 Books</span>
+      </div>
+    </div>
+
+    <!-- Books Grid Container -->
+    <div id="booksGrid" class="books-grid">
+      <!-- Injected dynamically via app.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div class="footer-container">
+      <div class="brand-logo">
+        <div class="brand-icon">📚</div>
+        <div class="brand-text">Page<span>Verse</span></div>
+      </div>
+      <p class="footer-copy">
+        Crafted with clean HTML & CSS. Click on any book card to view full synopses, author profiles, and reader notes.
+      </p>
+      <div class="footer-nav">
+        <a href="index.html">Catalog</a>
+        <a href="#about">Privacy</a>
+        <a href="#about">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

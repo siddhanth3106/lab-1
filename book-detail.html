@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detailed book information, synopsis, author biography, notable quotes, and reader reviews.">
+  <title>Book Details — PageVerse</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">📚</div>
+        <div class="brand-text">Page<span>Verse</span></div>
+      </a>
+      <nav class="header-actions">
+        <a href="index.html" class="nav-link">← Back to Catalog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Detail Content -->
+  <main class="detail-container">
+    <div class="back-nav-bar">
+      <a href="index.html" class="back-link">
+        <span>←</span>
+        <span>Back to all books</span>
+      </a>
+    </div>
+
+    <!-- Dynamic Book Detail Wrapper -->
+    <div id="bookDetailContent">
+      <!-- Injected dynamically via app.js -->
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite">
+    <span id="toastIcon">✨</span>
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="brand-logo">
+        <div class="brand-icon">📚</div>
+        <div class="brand-text">Page<span>Verse</span></div>
+      </div>
+      <p class="footer-copy">
+        Crafted with clean HTML & CSS. Delivering literary discovery with elegance.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
